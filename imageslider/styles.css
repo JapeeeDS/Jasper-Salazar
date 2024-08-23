@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+.imgslidecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border:2px solid yellow;
+    width: 640px;
+}
+
+.text {
+    flex: 1;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 320px;
+    height:300px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.picker {
+    text-align: center;
+}
