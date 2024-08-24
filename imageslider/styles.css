@@ -1,42 +1,84 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: aquamarine;
-}
-
-.imgslidecontainer {
+/* .timeline {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    padding: 20px 0;
+    height: 100%;
+  } */
+
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    width: 600px;
     margin: auto;
-    border:2px solid yellow;
-    width: 640px;
+  }
+
+  .timeline::before {
+  content: '';
+  position: absolute;
+  top: 14%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
 }
 
-.text {
-    flex: 1;
-    font-size: 18px;
-    padding: 20px;
-    border: 2px solid black;
-    
-}
+  .timeline-item {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 120px ;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px; /* Adjust this to position the line below */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px; /* Length of the line */
+    background-color: #000;
+  }
 
-.image {
-    flex: 1;
+  .timeline-item-left {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-bottom: 120px ;
+  }
+  
+  .timeline-item-left::before {
+    content: '';
+    position: absolute;
+    top: 10px; /* Adjust this to position the line below */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px; /* Length of the line */
+    background-color: #000;
+  }
+
+  .asd {
+    margin-top: 40px;
+    margin-left: -65px;
+    width: 140px;
+    border: 2px solid green;
     text-align: center;
-}
-
-.image img {
-    width: 320px;
-    height:300px;
-}
-
-button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.picker {
+  }
+  
+  .timeline-desc {
+    margin-top: 20px;
+    width: 180px;
+    margin-left: -81px;
     text-align: center;
-}
+  }

@@ -118,38 +118,10 @@ li a:hover {
         margin-top: 50px;
         margin-bottom: 55px;
     }
-
-    .school-timeline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     
     .grad-pic {
         margin: auto;
         margin-bottom: 20px;
-    }
-
-    .sy-0714 {
-        width: 380px;
-        margin-bottom: -10px;
-    }
-
-    .sy-1820 {
-        width: 380px;
-    }
-
-    .grad-school {
-        text-align: center;
-    }
-
-    .grad-content {
-        text-align: center;
-    }
-
-    .sy-2007, .sy-2014, .sy-2018, .sy-2020 {
-        border: 2px solid #39FF13;
-        margin-bottom: 10px;
     }
 
     .profile-content .desc {
@@ -249,6 +221,38 @@ li a:hover {
 
     .imgslidecontainer .text{
         font-size: 12px;
+    }
+
+    .school-timeline .timeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+        height: 100%;
+        width: 300px;
+    }
+
+
+    .timeline .timeline-item {
+        margin-bottom: 120px;
+    }
+
+    .timeline .timeline-item-left {
+        margin-bottom: 150px;
+    }
+
+    .picker button {
+        margin: 2px;
+        padding: 5px 10px;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .personal .picker {
+        margin-top: 5px;
     }
 
     
@@ -362,15 +366,6 @@ h4 {
     text-align: center;
 }
 
-.school-timeline {
-    color: #ffffff;
-    font-family: 'Zen Antigue Soft';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:linear-gradient(10deg, #1E1F21 60%, #424242 10%);
-}
-
 
 .grad-pic {
     height: 300px;
@@ -379,37 +374,9 @@ h4 {
     border-radius: 20px;
 }
 
-.sy-0714 {
-    width: 360px;
-}
-
-.sy-1820 {
-    width: 360px;
-}
-
-.grad-school {
-    text-align: center;
-}
-
-.grad-content {
-    text-align: center;
-}
-
-.grad-year {
-    margin-bottom: -15px;
-}
-
-.sy-2007, .sy-2014, .sy-2018, .sy-2020 {
-    border: 2px solid #ffffff;
-    margin: 10px;
-}
-
-.sy-2007:hover, .sy-2014:hover, .sy-2018:hover, .sy-2020:hover {
-    border: 2px solid #39FF13;
-    margin: 10px;
-    transition: 0.5s;
-    background: #1b720a;
-    transform: scale(1.03);
+.schoolpic {
+    margin: auto;
+    width:220px;
 }
 
 .skills-pic {
@@ -429,7 +396,7 @@ h4 {
 .cards-skill {
     height: 180px;
     width: 120px;
-    border:2px solid rgb(255, 255, 255);
+    border:2px solid #ccc;
     border-radius: 20px;
     text-align: center;
 }
@@ -674,3 +641,86 @@ button:hover {
 .picker {
     text-align: center;
 }
+
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    width: 600px;
+    margin: auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+}
+
+  .timeline-item {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #39FF13;
+    border-radius: 50%;
+    margin-bottom: 120px ;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px; /* Adjust this to position the line below */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px; /* Length of the line */
+    background-color: #39FF13;
+  }
+
+  .timeline-item-left {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: #39FF13;
+    border-radius: 50%;
+    margin-bottom: 120px;
+  }
+  
+  .timeline-item-left::before {
+    content: '';
+    position: absolute;
+    top: 10px; /* Adjust this to position the line below */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px; /* Length of the line */
+    background-color: #39FF13;
+  }
+
+  .asd {
+    margin-top: 40px;
+    margin-left: -65px;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #39FF13;
+    color: #ffffff;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .timeline-desc {
+    margin-top: 20px;
+    width: 180px;
+    margin-left: -81px;
+    text-align: center;
+    color: #ffffff;
+  }
