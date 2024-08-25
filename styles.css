@@ -208,6 +208,47 @@ li a:hover {
     .con-container .con-info {
         margin: auto;
         margin-bottom: 40px;
+        font-size: 10px;
+        width: 300px;
+    }
+
+    .nameandemail .yourname{
+        width: 275px;
+        margin: auto;
+        margin-top: 10px;
+        border: 1px solid #2fde0c;
+    }
+    .nameandemail .youremail{
+        width: 275px;
+        margin: auto;
+        border: 1px solid #2fde0c;
+    }
+    .nameandemail {
+        flex-direction: column-reverse;
+        width: 300px;
+        margin: auto;
+    }
+
+    .con-mess .yoursubject{
+        width: 275px;
+        margin: auto;
+        margin-top: 40px;
+        border: 1px solid #2fde0c;
+    }
+
+    .con-mess .yourmessage {
+        width: 275px;
+        margin: auto;
+        margin-top: 40px;
+        border: 1px solid #2fde0c;
+    }
+
+    .con-container .con-mess {
+        width: 310px;
+    }
+
+    .con-mess .sendmessage {
+        margin-top: 20px;
     }
 
     .personal .imgslidecontainer {
@@ -307,9 +348,8 @@ li a:hover {
 #LearnMore:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    background: #39FF13;
+    background: #ededed;
 }
-
 .socials a {
     margin: 10px;
     border-radius: 50%;
@@ -519,6 +559,7 @@ h4 {
     color: #fff;
     margin-left: 10px;
     border-radius:10px;
+    padding: 10px;
 }
 
 .infooo {
@@ -716,6 +757,13 @@ button:hover {
     align-items: center;
   }
   
+  .asd:hover {
+    background-color: #39FF13;
+    color:#000000;
+    transform: scale(1.10);
+    transition: 0.5s;
+    border-radius: 10px;
+  }
   
   .timeline-desc {
     margin-top: 20px;
