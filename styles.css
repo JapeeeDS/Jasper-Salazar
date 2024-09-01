@@ -68,14 +68,21 @@ li a:hover {
 
 @media (max-width: 1080px) {
 
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
     .home, .personal, .projects, .contacts{
         width: 100%;
         margin: auto;
     }
 
     header {
-        width: 100%;
-        margin: auto;
+        width: 100vw;
     }
     header .logo{
         margin-right: 20px;
@@ -319,6 +326,9 @@ li a:hover {
         margin-top: 5px;
     }
 
+    .cv .CV {
+        margin-right: -10px;
+    }
     
 
 }
