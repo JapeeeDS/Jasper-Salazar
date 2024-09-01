@@ -68,8 +68,14 @@ li a:hover {
 
 @media (max-width: 1080px) {
 
-    body header {
-        width:98%;
+    .home, .personal, .projects, .contacts{
+        width: 100%;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+        margin: auto;
     }
     header .logo{
         margin-right: 20px;
@@ -121,11 +127,18 @@ li a:hover {
         width: 400px;
     }
 
-    .socials {
+    .home .socials {
         margin-top: 50px;
         margin-bottom: 55px;
+        width: 300px;
+        margin: auto;
     }
     
+    .home .socials a {
+        width: 40px;
+        height: 40px;
+    }
+
     .grad-pic {
         margin: auto;
         margin-bottom: 20px;
@@ -133,7 +146,7 @@ li a:hover {
 
     .profile-content .desc {
         font-size: 15px;
-        width: 350px;
+        width: 300px;
         margin: auto;
         margin-top: -37px;
     }
@@ -200,7 +213,8 @@ li a:hover {
     }
 
     .projects .proj-intro {
-        width: 350px;
+        width: 300px;
+        font-size: 18px;
     }
 
     .con-container {
