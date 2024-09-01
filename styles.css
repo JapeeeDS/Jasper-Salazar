@@ -67,6 +67,10 @@ li a:hover {
 }
 
 @media (max-width: 1080px) {
+
+    body header {
+        width:98%;
+    }
     header .logo{
         margin-right: 20px;
     }
