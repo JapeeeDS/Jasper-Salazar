@@ -329,6 +329,12 @@ li a:hover {
     .cv .CV {
         margin-right: -10px;
     }
+
+    .project-overlay .project-text a {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
     
 
 }
