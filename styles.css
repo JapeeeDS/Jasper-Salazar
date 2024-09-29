@@ -17,7 +17,7 @@ header {
     left: 0;
     width:100%;
     height: 60px;
-    background-image: linear-gradient(to right, blue, yellow);
+    background-image: linear-gradient(to right, green, yellow);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -388,7 +388,7 @@ li a:hover {
 #LearnMore:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    background: #ededed;
+    background: yellow;
 }
 .socials a {
     margin: 10px;
@@ -693,7 +693,7 @@ hr {
 }
 
 .sendmessage:hover {
-    background:#2fde0c;
+    background:yellow;
     transform: scale(1.05);
     transition: 0.5s;
 }
